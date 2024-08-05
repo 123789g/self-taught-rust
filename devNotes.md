@@ -3,6 +3,10 @@
   2. Gain a stronger confidence in my backend abilities.
   3. Contribute that Grappling Hook idea I have to Veloren.
 
+## General Thoughts
+  1. The Rust compiler is strict but it is very easy to read.
+  2. I have no clue what the signifigance of having precise annotations is. How many MB of ram do I save? Can I even percieve it? Why not make every data annotation the biggest and be done with it?
+
 ## Data Type Annotations
   Rust requires most variables to be attatched to a data type annotation.
   Example | let number: u8 = 10
@@ -29,5 +33,7 @@
   Functions are called with **fn** as opposed to Python's **def** or JS's **function**.
   It goes without saying, but you must have initilized/created the function somewhere BEFORE you use it.
 
-  the entire line that makes up a function's head is called it's **signature**.
+  The entire line that makes up a function's head is called it's **signature**.
     Example | "fn call_me(num: u32) {}".
+
+  Function returns shouldn't use a **;**. Or if they do, they should explictily say **return x;**
